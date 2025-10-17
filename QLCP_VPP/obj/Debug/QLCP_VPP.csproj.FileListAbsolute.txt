@@ -53,3 +53,15 @@ C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\Q
 C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.csproj.CoreCompileInputs.cache
 C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.exe
 C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.pdb
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCPVPP\QLCP_VPP\bin\Debug\QLCP_VPP.exe.config
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCPVPP\QLCP_VPP\bin\Debug\QLCP_VPP.exe
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCPVPP\QLCP_VPP\bin\Debug\QLCP_VPP.pdb
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCPVPP\QLCP_VPP\obj\Debug\QLCP_VPP.csproj.AssemblyReference.cache
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCPVPP\QLCP_VPP\obj\Debug\QLCP_VPP.exe.config
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCPVPP\QLCP_VPP\obj\Debug\QLCP_VPP.Dangnhap.resources
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCPVPP\QLCP_VPP\obj\Debug\QLCP_VPP.Trang_chu.resources
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCPVPP\QLCP_VPP\obj\Debug\QLCP_VPP.Properties.Resources.resources
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCPVPP\QLCP_VPP\obj\Debug\QLCP_VPP.csproj.GenerateResource.cache
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCPVPP\QLCP_VPP\obj\Debug\QLCP_VPP.csproj.CoreCompileInputs.cache
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCPVPP\QLCP_VPP\obj\Debug\QLCP_VPP.exe
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCPVPP\QLCP_VPP\obj\Debug\QLCP_VPP.pdb
