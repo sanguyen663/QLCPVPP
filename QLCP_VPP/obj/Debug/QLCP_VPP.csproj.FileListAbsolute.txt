@@ -1,0 +1,55 @@
+C:\Users\ADMIN\source\repos\QLCP_VPP\QLCP_VPP\bin\Debug\QLCP_VPP.exe.config
+C:\Users\ADMIN\source\repos\QLCP_VPP\QLCP_VPP\bin\Debug\QLCP_VPP.exe
+C:\Users\ADMIN\source\repos\QLCP_VPP\QLCP_VPP\bin\Debug\QLCP_VPP.pdb
+C:\Users\ADMIN\source\repos\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.csprojAssemblyReference.cache
+C:\Users\ADMIN\source\repos\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.Properties.Resources.resources
+C:\Users\ADMIN\source\repos\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.csproj.GenerateResource.cache
+C:\Users\ADMIN\source\repos\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.exe
+C:\Users\ADMIN\source\repos\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.pdb
+C:\Users\ADMIN\source\repos\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.Trang_chu.resources
+D:\HK1N4\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\bin\Debug\QLCP_VPP.exe.config
+D:\HK1N4\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\bin\Debug\QLCP_VPP.exe
+D:\HK1N4\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\bin\Debug\QLCP_VPP.pdb
+D:\HK1N4\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.csprojAssemblyReference.cache
+D:\HK1N4\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.Trang_chu.resources
+D:\HK1N4\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.Properties.Resources.resources
+D:\HK1N4\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.csproj.GenerateResource.cache
+D:\HK1N4\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.csproj.CoreCompileInputs.cache
+D:\HK1N4\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.exe
+D:\HK1N4\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.pdb
+D:\HK1N4\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.Dangnhap.resources
+C:\Users\admin\Desktop\ThuPhuong\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\bin\Debug\QLCP_VPP.exe.config
+C:\Users\admin\Desktop\ThuPhuong\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\bin\Debug\QLCP_VPP.exe
+C:\Users\admin\Desktop\ThuPhuong\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\bin\Debug\QLCP_VPP.pdb
+C:\Users\admin\Desktop\ThuPhuong\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\ThuPhuong\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.Dangnhap.resources
+C:\Users\admin\Desktop\ThuPhuong\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.Trang_chu.resources
+C:\Users\admin\Desktop\ThuPhuong\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.Properties.Resources.resources
+C:\Users\admin\Desktop\ThuPhuong\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\ThuPhuong\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\ThuPhuong\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.exe
+C:\Users\admin\Desktop\ThuPhuong\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.pdb
+C:\Users\admin\Desktop\ThuPhuong\5. HTTT\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\Năm 4 kì 1\Hệ thống thông tin hỗ trợ\BTL\nhóm 9 2024\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\bin\Debug\QLCP_VPP.exe.config
+C:\Users\admin\Desktop\Năm 4 kì 1\Hệ thống thông tin hỗ trợ\BTL\nhóm 9 2024\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.exe
+C:\Users\admin\Desktop\Năm 4 kì 1\Hệ thống thông tin hỗ trợ\BTL\nhóm 9 2024\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.pdb
+C:\Users\admin\Desktop\Năm 4 kì 1\Hệ thống thông tin hỗ trợ\BTL\nhóm 9 2024\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\Năm 4 kì 1\Hệ thống thông tin hỗ trợ\BTL\nhóm 9 2024\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.Dangnhap.resources
+C:\Users\admin\Desktop\Năm 4 kì 1\Hệ thống thông tin hỗ trợ\BTL\nhóm 9 2024\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.Trang_chu.resources
+C:\Users\admin\Desktop\Năm 4 kì 1\Hệ thống thông tin hỗ trợ\BTL\nhóm 9 2024\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.Properties.Resources.resources
+C:\Users\admin\Desktop\Năm 4 kì 1\Hệ thống thông tin hỗ trợ\BTL\nhóm 9 2024\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.csproj.GenerateResource.Cache
+C:\Users\admin\Desktop\Năm 4 kì 1\Hệ thống thông tin hỗ trợ\BTL\nhóm 9 2024\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\bin\Debug\QLCP_VPP.exe
+C:\Users\admin\Desktop\Năm 4 kì 1\Hệ thống thông tin hỗ trợ\BTL\nhóm 9 2024\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\bin\Debug\QLCP_VPP.pdb
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\bin\Debug\QLCP_VPP.exe.config
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\bin\Debug\QLCP_VPP.exe
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\bin\Debug\QLCP_VPP.pdb
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.csproj.AssemblyReference.cache
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.exe.config
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.Dangnhap.resources
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.Trang_chu.resources
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.Properties.Resources.resources
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.csproj.GenerateResource.cache
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.csproj.CoreCompileInputs.cache
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.exe
+C:\Users\VICTUS\Desktop\ki1nam4\HTTTQLQD\New folder\VPP\A_Quan_Ly_Cap_Phat_VPP\QLCP_VPP\QLCP_VPP\obj\Debug\QLCP_VPP.pdb
