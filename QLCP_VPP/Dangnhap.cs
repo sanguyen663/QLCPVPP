@@ -85,5 +85,20 @@ namespace QLCP_VPP
           {
                lb_tbao.Visible = false;
           }
-     }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_tbao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

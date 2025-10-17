@@ -16,7 +16,19 @@ namespace QLCP_VPP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Trang_chu());
+
+            // Sửa ở đây: Mở form Đăng nhập trước
+            Dangnhap loginForm = new Dangnhap();
+            if (loginForm.ShowDialog() == DialogResult.OK)
+            {
+                // Nếu đăng nhập thành công (DialogResult.OK), thì mới mở form chính
+                Application.Run(new Trang_chu());
+            }
+            else
+            {
+                // Nếu không, thoát ứng dụng
+                Application.Exit();
+            }
         }
     }
 }
