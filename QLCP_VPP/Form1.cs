@@ -48,29 +48,30 @@ namespace QLCP_VPP
           }
           public void Hienthi()
           {
-               lst_dsVPP.Items.Clear();
-               ketnoi = new SqlConnection(chuoikn);
-               ketnoi.Open();
-               sql = "select VPP.MA_VPP,VPP.TEN_VPP,NCC.TEN_NCC,LVPP.TENLOAI_VPP,VPP.SOLUONG,VPP.MA_LOAI_VPP,NCC.MA_NCC from VANPHONGPHAM vpp, NHACUNGCAP NCC,LOAIVPP LVPP" +
-                    " WHERE VPP.MA_LOAI_VPP = LVPP.MA_LOAI_VPP AND VPP.MA_NCC = NCC.MA_NCC";
-               thuchien = new SqlCommand(sql, ketnoi);
-               docdulieu = thuchien.ExecuteReader();
-               i = 0;
-               while (docdulieu.Read())
-               {
-                    lst_dsVPP.Items.Add(docdulieu[0].ToString());
-                    lst_dsVPP.Items[i].SubItems.Add(docdulieu[1].ToString());
-                    lst_dsVPP.Items[i].SubItems.Add(docdulieu[2].ToString());
-                    lst_dsVPP.Items[i].SubItems.Add(docdulieu[3].ToString());
-                    lst_dsVPP.Items[i].SubItems.Add(docdulieu[4].ToString());
-                    lst_dsVPP.Items[i].SubItems.Add(docdulieu[5].ToString());
-                    lst_dsVPP.Items[i].SubItems.Add(docdulieu[6].ToString());
-                    lst_dsVPP.Items[i].SubItems.Add(docdulieu[7].ToString());
-
-                    i++;
-               }
-               ketnoi.Close();
-          }
+            lst_dsVPP.Items.Clear();
+            ketnoi = new SqlConnection(chuoikn);
+            ketnoi.Open();
+            sql = "select VPP.MA_VPP, VPP.TEN_VPP, NCC.TEN_NCC, LVPP.TENLOAI_VPP, VPP.SOLUONG, VPP.MA_LOAI_VPP, NCC.MA_NCC, VPP.SOLUONGLOI " +
+                  "from VANPHONGPHAM vpp, NHACUNGCAP NCC, LOAIVPP LVPP " +
+                  "WHERE VPP.MA_LOAI_VPP = LVPP.MA_LOAI_VPP AND VPP.MA_NCC = NCC.MA_NCC";
+            thuchien = new SqlCommand(sql, ketnoi);
+            docdulieu = thuchien.ExecuteReader();
+            i = 0;
+            while (docdulieu.Read())
+            {
+                lst_dsVPP.Items.Add(docdulieu[0].ToString());
+                lst_dsVPP.Items[i].SubItems.Add(docdulieu[1].ToString());
+                lst_dsVPP.Items[i].SubItems.Add(docdulieu[2].ToString());
+                lst_dsVPP.Items[i].SubItems.Add(docdulieu[3].ToString());
+                lst_dsVPP.Items[i].SubItems.Add(docdulieu[4].ToString());
+                lst_dsVPP.Items[i].SubItems.Add(docdulieu[5].ToString());
+                lst_dsVPP.Items[i].SubItems.Add(docdulieu[6].ToString());
+                string soLuongLoi = docdulieu.IsDBNull(7) ? "0" : docdulieu[7].ToString();
+                lst_dsVPP.Items[i].SubItems.Add(soLuongLoi);
+                i++;
+            }
+            ketnoi.Close();
+        }
           private void exit_form_Click(object sender, EventArgs e)
           {
 
@@ -286,19 +287,21 @@ namespace QLCP_VPP
   
           private void lst_dsVPP_Click(object sender, EventArgs e)
           {
-               txt_DM_Ma.Text = lst_dsVPP.SelectedItems[0].SubItems[0].Text;
-               txt_DM_LoaiVPP.Text = lst_dsVPP.SelectedItems[0].SubItems[3].Text;
-               txt_DM_Soluong.Text = lst_dsVPP.SelectedItems[0].SubItems[4].Text;
-               txt_DM_ten.Text = lst_dsVPP.SelectedItems[0].SubItems[1].Text;
-               txt_DM_tenNCC.Text = lst_dsVPP.SelectedItems[0].SubItems[2].Text;
-               txt_Dm_soluongloi.Text = lst_dsVPP.SelectedItems[0].SubItems[7].Text;
-               // sua thong tin
-               txt_sua_maloaiVPP.Text = lst_dsVPP.SelectedItems[0].SubItems[5].Text; ;
-               txt_sua_MaNCC.Text = lst_dsVPP.SelectedItems[0].SubItems[6].Text; ;
-               txt_sua_MaVPP.Text = lst_dsVPP.SelectedItems[0].SubItems[0].Text; ;
-               txt_sua_SLVPP.Text = lst_dsVPP.SelectedItems[0].SubItems[4].Text; ;
-               txt_sua_TenVPP.Text = lst_dsVPP.SelectedItems[0].SubItems[1].ToString(); ;
-          }
+            if (lst_dsVPP.SelectedItems.Count > 0)
+            {
+                txt_DM_Ma.Text = lst_dsVPP.SelectedItems[0].SubItems[0].Text;
+                txt_DM_ten.Text = lst_dsVPP.SelectedItems[0].SubItems[1].Text;
+                txt_DM_tenNCC.Text = lst_dsVPP.SelectedItems[0].SubItems[2].Text;
+                txt_DM_LoaiVPP.Text = lst_dsVPP.SelectedItems[0].SubItems[3].Text;
+                txt_DM_Soluong.Text = lst_dsVPP.SelectedItems[0].SubItems[4].Text;
+                txt_Dm_soluongloi.Text = lst_dsVPP.SelectedItems[0].SubItems[7].Text;
+                txt_sua_MaVPP.Text = lst_dsVPP.SelectedItems[0].SubItems[0].Text;
+                txt_sua_TenVPP.Text = lst_dsVPP.SelectedItems[0].SubItems[1].Text;
+                txt_sua_SLVPP.Text = lst_dsVPP.SelectedItems[0].SubItems[4].Text;
+                txt_sua_maloaiVPP.Text = lst_dsVPP.SelectedItems[0].SubItems[5].Text;
+                txt_sua_MaNCC.Text = lst_dsVPP.SelectedItems[0].SubItems[6].Text;
+            }
+        }
 
           private void btn_DM_xoa_Click(object sender, EventArgs e)
           {
@@ -381,9 +384,10 @@ namespace QLCP_VPP
                          lst_dsVPP.Items[i].SubItems.Add(docdulieu[4].ToString());
                          lst_dsVPP.Items[i].SubItems.Add(docdulieu[5].ToString());
                          lst_dsVPP.Items[i].SubItems.Add(docdulieu[6].ToString());
-                         lst_dsVPP.Items[i].SubItems.Add(docdulieu[7].ToString());
+                         string soLuongLoi = docdulieu.IsDBNull(7) ? "0" : docdulieu[7].ToString();
+                         lst_dsVPP.Items[i].SubItems.Add(soLuongLoi);
 
-                         i++;
+                    i++;
                     }
                     ketnoi.Close();
                }
@@ -414,7 +418,7 @@ namespace QLCP_VPP
                     thuchien = new SqlCommand(sql, ketnoi);
                     thuchien.ExecuteNonQuery();
                }
-               catch (Exception ex)
+               catch (Exception ex) 
                {
                     //MessageBox.Show(ex.ToString());
 
@@ -495,48 +499,60 @@ namespace QLCP_VPP
 
           private void btn_Doitra_Click(object sender, EventArgs e)
           {
-               ketnoi = new SqlConnection(chuoikn);
-               ketnoi.Open();
-               try
-               {
-                    thuchien = new SqlCommand("select count(*) from PHIEUDOITRA", ketnoi);
-                    var n = (int)thuchien.ExecuteScalar();
-                    n += 1;
-                    if (n < 10)
-                    {
-                         madt = "DT0" + n.ToString();
-                    }
-                    else
-                    {
-                         if (n >= 10 && n < 100)
-                         {
-                              madt = "DT" + n.ToString();
-                         }
-                         else madt = "DT" + n.ToString();
-                    }
-                    sql = "EXEC DOITRA '"+ madt + "',N'Phiếu đổi trả','"+cb_Doitra_maVPP.Text+"','"+MaNV+"','"+cb_Doitra_maDV.Text+"',"+int.Parse(txt_Doitra_soluong.Text)+",'"+Convert.ToDateTime(DateTime.Now.ToString("dd/MM/yyyy"))+"','"+txt_Doitra_maNCC.Text+"'" ;
-                    thuchien = new SqlCommand(sql, ketnoi);
-                    thuchien.ExecuteNonQuery();
-               }
-               catch (Exception ex)
-               {
-                    //MessageBox.Show(ex.ToString());
+            // 1. Kiểm tra dữ liệu đầu vào
+            if (cb_Doitra_maDV.SelectedIndex == -1 || cb_Doitra_maVPP.SelectedIndex == -1 || string.IsNullOrWhiteSpace(txt_Doitra_soluong.Text))
+            {
+                MessageBox.Show("Vui lòng chọn Đơn vị, Vật tư và nhập Số lượng đổi trả.", "Thiếu thông tin", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!int.TryParse(txt_Doitra_soluong.Text, out int soLuongDoiTra) || soLuongDoiTra <= 0)
+            {
+                MessageBox.Show("Số lượng đổi trả phải là một số nguyên lớn hơn 0.", "Dữ liệu không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
-               }
-               finally
-               {
-                    DialogResult d = MessageBox.Show("Đổi trả " + txt_Doitra_TenVPP.Text + " với số lượng " + txt_Doitra_soluong.Text + " từ nhà cung cấp " + txt_doitra_tenNCC.Text + " thành công!", "Thông báo hệ thống", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    if (d == DialogResult.OK)
-                    {
-                         txt_doitra_tenNCC.Text = "";
-                         txt_Doitra_maNCC.Text = "";
-                         txt_Doitra_soluong.Text = "";
-                         txt_Doitra_TenVPP.Text = "";
-                         
-                    }
-               }
-               ketnoi.Close();
-          }
+            try
+            {
+                using (ketnoi = new SqlConnection(chuoikn))
+                {
+                    ketnoi.Open();
+
+                    // 2. Tự động tạo mã phiếu đổi trả mới
+                    SqlCommand countCmd = new SqlCommand("SELECT COUNT(*) FROM PHIEUDOITRA", ketnoi);
+                    int n = (int)countCmd.ExecuteScalar() + 1;
+                    madt = "DT" + n.ToString("D3"); // Định dạng mã: DT001, DT002...
+
+                    // 3. Gọi Stored Procedure 'DOITRA' một cách an toàn
+                    thuchien = new SqlCommand("DOITRA", ketnoi);
+                    thuchien.CommandType = CommandType.StoredProcedure;
+
+                    // Thêm các tham số (Parameters)
+                    thuchien.Parameters.AddWithValue("@MA_PHIEU", madt);
+                    thuchien.Parameters.AddWithValue("@TEN_PHIEU", "Phiếu đổi trả ngày " + DateTime.Now.ToString("dd/MM/yyyy"));
+                    thuchien.Parameters.AddWithValue("@MA_VPP", cb_Doitra_maVPP.Text);
+
+                    // SỬA LỖI: Cung cấp giá trị cho tham số @MANV
+                    thuchien.Parameters.AddWithValue("@MANV", this.MaNV); // Lấy mã NV đã được lưu khi đăng nhập
+
+                    thuchien.Parameters.AddWithValue("@MA_DONVI", cb_Doitra_maDV.Text);
+                    thuchien.Parameters.AddWithValue("@SOLUONG", soLuongDoiTra);
+                    thuchien.Parameters.AddWithValue("@NGAY_DOITRA", DateTime.Now);
+                    thuchien.Parameters.AddWithValue("@MA_NCC", txt_Doitra_maNCC.Text);
+
+                    thuchien.ExecuteNonQuery();
+
+                    MessageBox.Show($"Đổi trả thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // 4. Xóa ô nhập liệu và cập nhật lại danh sách VPP
+                    txt_Doitra_soluong.Text = "";
+                    Hienthi();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi khi thực hiện đổi trả: " + ex.Message, "Lỗi hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
           private void cb_Doitra_maVPP_SelectedValueChanged(object sender, EventArgs e)
           {
@@ -561,74 +577,101 @@ namespace QLCP_VPP
 
           private void btn_Doitra_capnhat_Click(object sender, EventArgs e)
           {
-               lst_LS_doitra.Items.Clear();
-               sql = "EXEC LICH_SU_DOITRA";
-               ketnoi = new SqlConnection(chuoikn);
-               ketnoi.Open();
-               thuchien = new SqlCommand(sql, ketnoi);
-               docdulieu = thuchien.ExecuteReader();
-               i = 0;
-               while (docdulieu.Read())
-               {
-                    lst_LS_doitra.Items.Add(docdulieu[0].ToString());
-                    lst_LS_doitra.Items[i].SubItems.Add(docdulieu[1].ToString());
-                    lst_LS_doitra.Items[i].SubItems.Add(docdulieu[2].ToString());
-                    lst_LS_doitra.Items[i].SubItems.Add(docdulieu[3].ToString());
-                    lst_LS_doitra.Items[i].SubItems.Add(docdulieu[4].ToString());
-                    lst_LS_doitra.Items[i].SubItems.Add(docdulieu[5].ToString());
-                    string ng_dt = Convert.ToDateTime(docdulieu[6].ToString()).ToString("dd/MM/yyyy");
-                    lst_LS_doitra.Items[i].SubItems.Add(ng_dt);
+            lst_LS_doitra.Items.Clear();
+            try
+            {
+                using (SqlConnection ketnoi = new SqlConnection(chuoikn))
+                {
+                    ketnoi.Open();
+                    // Gọi Stored Procedure để lấy lịch sử
+                    SqlCommand thuchien = new SqlCommand("LICH_SU_DOITRA", ketnoi);
+                    thuchien.CommandType = CommandType.StoredProcedure;
+                    SqlDataReader docdulieu = thuchien.ExecuteReader();
 
-                    i++;
-               }
-               ketnoi.Close();
-          }
+                    while (docdulieu.Read())
+                    {
+                        // Lấy dữ liệu bằng tên cột để đảm bảo chính xác
+                        string maPhieu = docdulieu["MA_PHIEU"].ToString();
+                        string tenPhieu = docdulieu["TEN_PHIEU"].ToString();
+                        string tenNV = docdulieu["TENNV"].ToString();
+                        string tenDV = docdulieu["TEN_DONVI"].ToString();
+                        string tenNCC = docdulieu["TEN_NCC"].ToString();
+                        string tenVPP = docdulieu["TEN_VPP"].ToString();
+                        string ngayDoiTra = Convert.ToDateTime(docdulieu["NGAY_DOITRA"]).ToString("dd/MM/yyyy");
+
+                        // Thêm vào danh sách ListView
+                        ListViewItem item = new ListViewItem(maPhieu);
+                        item.SubItems.Add(tenPhieu);
+                        item.SubItems.Add(tenNV);
+                        item.SubItems.Add(tenDV);
+                        item.SubItems.Add(tenNCC);
+                        item.SubItems.Add(tenVPP);
+                        item.SubItems.Add(ngayDoiTra);
+                        lst_LS_doitra.Items.Add(item);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Không thể tải lịch sử đổi trả: " + ex.Message, "Lỗi hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
           private void btn_CapPhat_Click(object sender, EventArgs e)
           {
-               ketnoi = new SqlConnection(chuoikn);
-               ketnoi.Open();
-               try
-               {
-                    thuchien = new SqlCommand("select count(*) from PHIEUCAPPHAT_VPP", ketnoi);
-                    var n = (int)thuchien.ExecuteScalar();
-                    n += 1;
-                    if (n < 10)
-                    {
-                         macp = "CP0" + n.ToString();
-                    }
-                    else
-                    {
-                         if (n >= 10 && n < 100)
-                         {
-                              macp = "CP" + n.ToString();
-                         }
-                         else macp = "CP" + n.ToString();
-                    }
-                    sql = "EXEC CAPPHAT '"+macp+"',N'Phiếu cấp phát','"+cb_maVPP.Text+"','"+MaNV+"','"+cb_Cap_maDonvi.Text+"',"+int.Parse(txt_Cap_soluong.Text)+",'"+Convert.ToDateTime(DateTime.Now.ToString("dd/MM/yyyy"))+"'";
-                    thuchien = new SqlCommand(sql, ketnoi);
+            // 1. Kiểm tra dữ liệu đầu vào
+            if (cb_Cap_maDonvi.SelectedIndex == -1 || cb_maVPP.SelectedIndex == -1 || string.IsNullOrWhiteSpace(txt_Cap_soluong.Text))
+            {
+                MessageBox.Show("Vui lòng chọn Đơn vị, Vật tư và nhập Số lượng.", "Thiếu thông tin", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!int.TryParse(txt_Cap_soluong.Text, out int soLuongCap) || soLuongCap <= 0)
+            {
+                MessageBox.Show("Số lượng cấp phát phải là một số nguyên lớn hơn 0.", "Dữ liệu không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            try
+            {
+                using (ketnoi = new SqlConnection(chuoikn))
+                {
+                    ketnoi.Open();
+
+                    // 2. Tự động tạo mã phiếu cấp phát mới
+                    SqlCommand countCmd = new SqlCommand("SELECT COUNT(*) FROM PHIEUCAPPHAT_VPP", ketnoi);
+                    int n = (int)countCmd.ExecuteScalar() + 1;
+                    macp = "CP" + n.ToString("D3"); // Định dạng mã: CP001, CP002...
+
+                    // 3. Gọi Stored Procedure 'CAPPHAT' một cách an toàn
+                    thuchien = new SqlCommand("CAPPHAT", ketnoi);
+                    thuchien.CommandType = CommandType.StoredProcedure;
+
+                    // Thêm các tham số (Parameters)
+                    thuchien.Parameters.AddWithValue("@MA_PH_CP", macp);
+                    thuchien.Parameters.AddWithValue("@TEN_PH_CP", "Phiếu cấp phát ngày " + DateTime.Now.ToString("dd/MM/yyyy"));
+                    thuchien.Parameters.AddWithValue("@MA_VPP", cb_maVPP.Text);
+
+                    // SỬA LỖI: Cung cấp giá trị cho tham số @MANV
+                    thuchien.Parameters.AddWithValue("@MANV", this.MaNV); // Lấy mã NV đã được lưu khi đăng nhập
+
+                    thuchien.Parameters.AddWithValue("@MA_DONVI", cb_Cap_maDonvi.Text);
+                    thuchien.Parameters.AddWithValue("@SOLUONG", soLuongCap);
+                    thuchien.Parameters.AddWithValue("@NGAY_CP", DateTime.Now);
+
                     thuchien.ExecuteNonQuery();
-               }
-               catch (Exception ex)
-               {
-                    //MessageBox.Show(ex.ToString());
 
-               }
-               finally
-               {
-                    DialogResult d = MessageBox.Show("Cấp phát " + txt_CP_tenVPP.Text + " với số lượng " + txt_Cap_soluong.Text + " cho đơn vị " + txt_Cap_tenDV.Text + " thành công!", "Thông báo hệ thống", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    if (d == DialogResult.OK)
-                    {
-                         txt_Cap_sdtDonvi.Text = "";
-                         txt_Cap_soluong.Text = "";
-                         txt_Cap_soLuongHV.Text = "";
-                         txt_CP_tenVPP.Text = "";
-                         txt_Cap_tenDV.Text = "";
+                    MessageBox.Show($"Cấp phát thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    }
-               }
-               ketnoi.Close();
-          }
+                    // 4. Xóa ô nhập liệu và cập nhật lại danh sách VPP
+                    txt_Cap_soluong.Text = "";
+                    Hienthi();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi khi cấp phát: " + ex.Message, "Lỗi hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
           private void cb_maVPP_SelectedValueChanged(object sender, EventArgs e)
           {
@@ -649,27 +692,45 @@ namespace QLCP_VPP
 
           private void Capnhat_Click(object sender, EventArgs e)
           {
-               lst_LS_capphat.Items.Clear();
-               sql = "EXEC LICH_SU_CAPPHAT";
-               ketnoi = new SqlConnection(chuoikn);
-               ketnoi.Open();
-               thuchien = new SqlCommand(sql, ketnoi);
-               docdulieu = thuchien.ExecuteReader();
-               i = 0;
-               while (docdulieu.Read())
-               {
-                    lst_LS_capphat.Items.Add(docdulieu[0].ToString());
-                    lst_LS_capphat.Items[i].SubItems.Add(docdulieu[1].ToString());
-                    lst_LS_capphat.Items[i].SubItems.Add(docdulieu[2].ToString());
-                    lst_LS_capphat.Items[i].SubItems.Add(docdulieu[3].ToString());
-                    lst_LS_capphat.Items[i].SubItems.Add(docdulieu[4].ToString());
-                    lst_LS_capphat.Items[i].SubItems.Add(docdulieu[5].ToString());
-                    string ng_cp = Convert.ToDateTime(docdulieu[6].ToString()).ToString("dd/MM/yyyy");
-                    lst_LS_capphat.Items[i].SubItems.Add(ng_cp);
-                    i++;
-               }
-               ketnoi.Close();
-          }
+            lst_LS_capphat.Items.Clear();
+            try
+            {
+                using (SqlConnection ketnoi = new SqlConnection(chuoikn))
+                {
+                    ketnoi.Open();
+                    // Gọi Stored Procedure để lấy lịch sử cấp phát
+                    SqlCommand thuchien = new SqlCommand("LICH_SU_CAPPHAT", ketnoi);
+                    thuchien.CommandType = CommandType.StoredProcedure;
+                    SqlDataReader docdulieu = thuchien.ExecuteReader();
+
+                    while (docdulieu.Read())
+                    {
+                        // Lấy dữ liệu bằng tên cột để đảm bảo chính xác
+                        string maPhieu = docdulieu["MA_PH_CP"].ToString();
+                        string tenPhieu = docdulieu["TEN_PH_CP"].ToString();
+                        string tenNV = docdulieu["TENNV"].ToString();
+                        string tenDV = docdulieu["TEN_DONVI"].ToString();
+                        string tenVPP = docdulieu["TEN_VPP"].ToString();
+                        string soLuong = docdulieu["SOLUONG"].ToString();
+                        string ngayCap = Convert.ToDateTime(docdulieu["NGAY_CP"]).ToString("dd/MM/yyyy");
+
+                        // Thêm vào danh sách ListView
+                        ListViewItem item = new ListViewItem(maPhieu);
+                        item.SubItems.Add(tenPhieu);
+                        item.SubItems.Add(tenNV);
+                        item.SubItems.Add(tenDV);
+                        item.SubItems.Add(tenVPP);
+                        item.SubItems.Add(soLuong);
+                        item.SubItems.Add(ngayCap);
+                        lst_LS_capphat.Items.Add(item);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Không thể tải lịch sử cấp phát: " + ex.Message, "Lỗi hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
           private void lb_tenNV_Click(object sender, EventArgs e)
           {
