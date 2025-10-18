@@ -54,13 +54,9 @@ namespace QLCP_VPP
                     {
                          if (txt_Pass_dangnhap.Text == "123456")
                          {
-                              Trang_chu ct = new Trang_chu();
-                              this.Hide();
-                              ct.TB_TenNV = docdulieu[1].ToString();
-                              ct.maNV = docdulieu[0].ToString();
-                              ct.Visible = true;
-                              ketnoi.Close();
-                         }
+                            DialogResult = DialogResult.OK; // Báo hiệu đăng nhập thành công
+                            Close(); // Đóng form đăng nhập
+                    }
                          else
                          {
                               lb_tbao.Visible = true;
